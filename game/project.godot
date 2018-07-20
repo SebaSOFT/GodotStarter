@@ -1,0 +1,27 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=3
+
+[application]
+
+config/name="Godot Starter Template"
+run/main_scene="res://content/base/startup.tscn"
+config/icon="res://content/dev/icons-base/icon.png"
+
+[autoload]
+
+globals="*res://content/base/globals.gd"
+
+[locale]
+
+locale_filter=[ 0, [ "en", "es", "fr", "it" ] ]
+
+[rendering]
+
+environment/default_environment="res://content/environment/default_env.tres"

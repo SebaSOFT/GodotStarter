@@ -41,6 +41,12 @@
 *.xml      text
 *.xhtml    text
 
+## Godot
+*.gd	eol=lf
+*.tscn	eol=lf
+*.tres	eol=lf
+*.cfg	eol=lf
+
 ## DOCKER
 *.dockerignore    text
 Dockerfile    text
