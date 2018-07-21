@@ -1,17 +1,3 @@
-# Godot Template Starter
-
-This package pretends to be a startup point on how to structure projects using the [Godot Game engine](http://godotengine.org)
-
-----
-
-> *NOTE:* This project structure is based (losely) in the proposals of the [Official Documentation](http://docs.godotengine.org/en/stable/getting_started/workflow/project_setup/project_organization.html) on project structure and the [Assets Naming Convention](https://wiki.unrealengine.com/Assets_Naming_Convention) from Unreal Engine to create a comprehensive set of folders. 
-> The premise is always: **GROUPING ASSETS BY USAGE, NOT BY TYPE** since the latter one doesn't scale on big projects.
-
-----
-
-## Directory structure
-
-```
 GodotStarter.
 |   .gitattributes - Make sure git understands file types
 |   .gitignore - to ignore import and others
@@ -150,20 +136,15 @@ GodotStarter.
 |       |               TitleMenu.gd - script related to navigating the main menu and starting events
 |       |               TitleMenu.tscn - TitleMenu sub-scene nodes.
 |       |               
-|       \---vehicles - graphics, sounds, effects and scripts related to alternative means of transportation/move around a map
+|       \---vehicles
 |               
-+---related - related documents and assets for marketing and commercialization purposes
-|   +---android-store - screenshtos, videos and other material for android Google Play
++---related
+|   +---android-store
 |   |       
-|   +---apple-store - screenshtos, videos and other material for android Google Play
+|   +---apple-store
 |   |       
-|   +---design - documents, concept art and other material related to the idea and development
-|   |       
-|   +---presskit - http://dopresskit.com/ here . . . do it
-|   |       
-|   \---print - diptics, triptics, posters, banners, flyers, social network graphics, etc.
+|   \---presskit
 |           
-+---server - if you have multiplayer or stats and need to deploy a server, here is your place
++---server
 |       
-\---site - every nice game has its site full of info...
-```
+\---site
