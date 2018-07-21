@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://content/ui/menus/title/TitleMenu.gd" type="Script" id=1]
+[ext_resource path="res://content/ui/menus/title/title-bg.png" type="Texture" id=2]
+
+[node name="TitleMenu" type="Control"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Anchor", "Transform" ]
+
+[node name="title-bg" type="Sprite" parent="." index="0"]
+
+position = Vector2( 640, 360 )
+texture = ExtResource( 2 )
+region_rect = Rect2( 380, 58, 263, 58 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="MenuPanel" type="Panel" parent="." index="1"]
+
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -364.0
+margin_top = -85.0
+margin_right = -103.0
+margin_bottom = 85.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Margin" ]
+
+[node name="MenuList" type="ItemList" parent="MenuPanel" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+items = [ "New Game", null, false, "Continue", null, false, "Options", null, false, "Exit", null, false ]
+select_mode = 0
+allow_reselect = false
+auto_height = true
+icon_mode = 1
+fixed_icon_size = Vector2( 0, 0 )
+
+[connection signal="item_activated" from="MenuPanel/MenuList" to="." method="_on_Menu_item_activated"]
+
+

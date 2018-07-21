@@ -12,11 +12,19 @@ config_version=3
 
 config/name="Godot Starter Template"
 run/main_scene="res://content/base/startup.tscn"
+boot_splash/image="res://content/dev/boot-splash/boot-splash.png"
 config/icon="res://content/dev/icons-base/icon.png"
 
 [autoload]
 
 globals="*res://content/base/globals.gd"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/size/resizable=false
+window/size/always_on_top=true
 
 [locale]
 
@@ -24,4 +32,5 @@ locale_filter=[ 0, [ "en", "es", "fr", "it" ] ]
 
 [rendering]
 
+environment/default_clear_color=Color( 0, 0, 0, 1 )
 environment/default_environment="res://content/environment/default_env.tres"

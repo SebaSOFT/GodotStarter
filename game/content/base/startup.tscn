@@ -1,5 +1,28 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
 
-[node name="World" type="Node" index="0"]
+[ext_resource path="res://content/base/startup.gd" type="Script" id=1]
+[ext_resource path="res://content/ui/menus/splash/SplashScreens.tscn" type="PackedScene" id=2]
+[ext_resource path="res://content/ui/menus/title/TitleMenu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://content/ui/menus/options/OptionsMenu.tscn" type="PackedScene" id=4]
+
+[node name="World" type="Node"]
+
+script = ExtResource( 1 )
+
+[node name="SplashScreens" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="TitleMenu" parent="." index="1" instance=ExtResource( 3 )]
+
+visible = false
+
+[node name="OptionsMenu" parent="." index="2" instance=ExtResource( 4 )]
+
+visible = false
+
+[connection signal="finished_Loop" from="SplashScreens" to="." method="_on_SplashScreens_finished_Loop"]
+
+[connection signal="menu_activated" from="TitleMenu" to="." method="_on_TitleMenu_menu_activated"]
+
+[connection signal="options_back" from="OptionsMenu" to="." method="_on_OptionsMenu_options_back"]
 
 
