@@ -8,6 +8,9 @@ This package pretends to be a startup point on how to structure projects using t
 > The premise is always: **GROUPING ASSETS BY USAGE, NOT BY TYPE** since the latter one doesn't scale on big projects.
 
 ----
+## Video explanation
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/LUKzKMOc72M/0.jpg)](http://www.youtube.com/watch?v=LUKzKMOc72M)
 
 ## Directory structure
 
