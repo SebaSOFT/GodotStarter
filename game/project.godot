@@ -6,11 +6,17 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=3
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
 
 [application]
 
 config/name="Godot Starter Template"
+config/description="This package pretends to provide a startup point on how to structure projects using the Godot Game engine"
 run/main_scene="res://content/base/startup.tscn"
 boot_splash/image="res://content/dev/boot-splash/boot-splash.png"
 config/icon="res://content/dev/icons-base/icon.png"
@@ -25,6 +31,7 @@ window/size/width=1280
 window/size/height=720
 window/size/resizable=false
 window/size/always_on_top=true
+window/stretch/aspect="keep_height"
 
 [locale]
 
