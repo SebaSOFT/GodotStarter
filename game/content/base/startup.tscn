@@ -15,6 +15,7 @@ visible = false
 
 [node name="OptionsMenu" parent="." instance=ExtResource( 4 )]
 visible = false
+
 [connection signal="finished_Loop" from="SplashScreens" to="." method="_on_SplashScreens_finished_Loop"]
 [connection signal="menu_activated" from="TitleMenu" to="." method="_on_TitleMenu_menu_activated"]
 [connection signal="options_back" from="OptionsMenu" to="." method="_on_OptionsMenu_options_back"]

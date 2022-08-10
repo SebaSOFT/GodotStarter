@@ -11,7 +11,7 @@ func _ready():
 	_display_menu()
 
 # WARNING, don't put too much stuff here, this runs every frame
-func _process(delta):
+func _process(_delta):
 	# if the user press cancel (Escape) and we are in splash, just go to title menu
 	if Input.is_action_pressed("ui_cancel"):
 		match menu_state:
